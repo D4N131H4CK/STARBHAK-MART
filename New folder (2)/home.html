@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://kit.fontawesome.com/24f3add6a5.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>STARBHAKMART</title>
+</head>
+
+<body>
+   
+    <nav class="navbar navbar-dark bg-dark" >
+        <div class="container-fluid" >
+            <nav class="navbar bg-body-tertiary d-flex justify-content-center align-items-center">
+                <div class="container d-flex justify-content-center align-items-center" style="margin-right: 1330px;">
+                    <a class="navbar-brand" href="#">
+
+                        <img src="assets/Untitled-1.png" alt="Logo" width="75" height="55"
+                            class="d-inline-block align-text-top text ">
+                        </img>
+
+                    </a>
+                    <strong style="color: aliceblue;">
+                        <h2>STARBHAKMART</h2>
+                    </strong>
+
+                </div>
+            </nav>
+            <button class="btn btn-outline-white bg-white " type="button" onclick="location.href='keranjang.html'"><i
+                    class="fa-solid fa-cart-shopping fa-bounce"></i></button>
+            <button class="btn btn-outline-white bg-white" type="button"
+                onclick="location.href='index.html'">DATA</button>
+            <button class="btn btn-outline-white bg-white" type="button" onclick="location.href='login.html'">
+                login
+            </button>
+        </div>
+    </nav>
+
+    <div class="container-fluid h-100">
+        <div class="row">
+            <!-- SideBar -->
+            <div class="card bg-white col-3 min-vh-100 border-3" style="position: sticky; top: 0;">
+                <div class="">
+                    <select class="form-select bg-dark text-center text-white" style="margin-top: 10px;">
+                        <option>take away</option>
+                        <option>Cod</option>
+                        <option>Makan di tempat</option>
+                    </select>
+                </div>
+                <div class="mt-3">
+                    <div class="card bg-dark text-center text-white">
+                        <div class="card-body" style="padding-top: 10px;">
+                            <button class="bg-dark text-white" type="button"
+                                onclick="location.href = 'https://www.instagram.com/hansell.02/?hl=id'"
+                                style="border-style: none;">
+                                <i class="fa-solid fa-user"></i>
+                                DANIEL HANSEL
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- List Menu di pilih / Keranjang -->
+                <div class="overflow-auto" style="height: 400px; margin-top: 100px; flex-wrap: wrap;" id="list_keranjang"></div>
+                <div class="card m-2 bg-dark border-5" style="color: aliceblue; border-radius: 10px;">
+                    <div class="row">
+                        <div class="col">
+                            <h4>Sub Total:</h4>
+                        </div>
+                        <div class="col">
+                            <h4>
+                                <strong id="sub_total">Rp. 0</strong>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h4>Tax:</h4>
+                        </div>
+                        <div class="col">
+                            <h4>
+                                <strong id="tax_harga">Rp. 0</strong>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h4>Total Harga:</h4>
+                        </div>
+                        <div class="col">
+                            <h4>
+                                <strong id="total_harga">Rp. 0</strong>
+                            </h4>
+                        </div>
+                    </div>
+                    <br>
+                    <button class="btn btn-light top-100 col-4 bg-dark text-light" style="float: right;"
+                        onclick="bayar()">Bayar</button>
+
+                </div>
+            </div>
+            <!-- End Of Sidebar -->
+            <!-- Menu -->
+
+            <div class="col-9 p-3">
+                <div class="row g-2" id="content_menu"></div>
+            </div>
+            <div class="col-9 p-3">
+                <div class="row g-2" id="menu"></div>
+            </div>
+            <div class="col-9 p-3">
+                <div class="row g-2" id="data-id">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js" />
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
